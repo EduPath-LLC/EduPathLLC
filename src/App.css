@@ -1,0 +1,88 @@
+#root {
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'IstokWeb';
+  src: url('/src/assets/fonts/Istok_Web/IstokWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IstokWebBold';
+  src: url('/src/assets/fonts/Istok_Web/IstokWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IstokWebItalic';
+  src: url('/src/assets/fonts/Istok_Web/IstokWeb-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'IstokWeb', sans-serif;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.total {
+  background: linear-gradient(135deg, rgba(0,41,107,1) 0%, rgba(0,66,172,1) 100%);
+  background-size: 200% 200%;
+  animation: moveBackground 10s linear infinite;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.title {
+  font-family: 'IstokWeb';
+  font-size: 7.5em;
+  margin: 1vh;
+  color: #f0f0f0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.frontButton {
+  width: 7vw;
+  border-radius: 2vw;
+  border-width: 0px;
+  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%); 
+  color: white;
+}
+
+.frontButton:hover {
+  filter: drop-shadow(0 0 25vh #388E3C); 
+  background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%);
+}

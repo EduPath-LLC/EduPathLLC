@@ -1,0 +1,31 @@
+.nav {
+    display: flex;
+    padding: 2vh;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo {
+    height: 10vh;
+    transition: 0.2s ease;
+
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 0.2em rgba(255, 255, 255, 1));
+    transform: scale(1.1);
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-text {
+    margin-right: 5vw;
+    transition: all 0.2s ease;
+}
+
+.nav-text:hover {
+    filter: drop-shadow(0 0 0.2em rgba(255, 255, 255, 1));
+    transform: scale(1.1);
+}

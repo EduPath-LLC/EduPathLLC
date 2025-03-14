@@ -1,0 +1,52 @@
+.total {
+    background: radial-gradient(#0d2d4e, #030F1B);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .title {
+    font-family: 'IstokWeb';
+    font-size: 7.5em;
+    margin: 1vh;
+    color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+  
+  .frontButton {
+    width: 7vw;
+    border-radius: 2vw;
+    border-width: 0px;
+    background-color: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 0px 25px 10px #003061;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .frontButton:hover {
+    box-shadow: 0px 0px 25px 10px #004C99;
+    background-color: rgba(196, 196, 196, 0.1);
+    scale: 1.05;
+  }
+  
+  .intro {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    font-size: 1.25em;
+  }
