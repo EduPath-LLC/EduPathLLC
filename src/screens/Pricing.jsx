@@ -11,7 +11,7 @@ function Pricing() {
 
         <Navbar />
 
-        <h1 className='priceTitle'> Find the Right Plan for </h1>
+        <h1 className='priceTitle'> Find the Right Plan for you.</h1>
 
         <div className='priceBoxesContainer'>
           <PricingBox />

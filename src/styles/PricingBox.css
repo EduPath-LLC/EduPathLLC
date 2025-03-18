@@ -10,4 +10,80 @@
     background-color: rgba(255, 255, 255, 0.1);
     margin-left: 2.5vw;
     margin-right: 2.55vw;
+    display: flex;
+    justify-content: center;
+    
 }
+
+.card {
+    width: 300vh;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+
+.buttonsPrices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3vw;
+  }
+  
+  .frontButtonPrices {
+    width: 7vw;
+    border-radius: 2vw;
+    border-width: 0px;
+    background-color: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 0px 25px 10px #003061;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  
+  .frontButtonPrices:hover {
+    box-shadow: 0px 0px 25px 10px #004C99;
+    background-color: rgba(196, 196, 196, 0.1);
+    scale: 1.05;
+  }
+
+  .title {
+    font-family: 'IstokWeb';
+    font-size: 7.5em;
+    margin: 1vh;
+    color: #f0f0f0;
+    text-align: center;
+  }
+
+  .intro {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    font-size: 1.25em;
+    color: #fff;
+  }
