@@ -1,14 +1,19 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
-// import '../styles/Demo.css';
+import '../styles/Demo.css';
 
 function Demo() {
   return (
-    <div>
-      <Navbar />
-      <h1>Demo Page</h1>
-      <p >Welcome to the Demo Page!</p>
-    </div>
+    <>
+      <div className='total'>
+        <Navbar />
+        <h1 className='demoTitle'> Demo </h1>
+
+        <div className='boxOne'>
+
+        </div>
+      </div>
+    </>
   );
 }
 

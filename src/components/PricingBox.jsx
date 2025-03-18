@@ -1,8 +1,13 @@
+import React from 'react';
+import '../styles/PricingBox.css';
+
 function PricingBox() {
     return(
         <>
-        <div>
-            <p className="pricingBoxTitle"> </p>
+        <div className='boxContainer'>
+            <div className="pricingBox"></div>
+            <div className="pricingBox"></div>
+            <div className="pricingBox"></div>
         </div>
         </>
     );

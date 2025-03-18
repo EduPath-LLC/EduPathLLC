@@ -13,9 +13,7 @@ function Pricing() {
 
         <h1 className='priceTitle'> Find the Right Plan for </h1>
 
-        <div className='pricingBox'>
-          <PricingBox />
-          <PricingBox />
+        <div className='priceBoxesContainer'>
           <PricingBox />
         </div>
 

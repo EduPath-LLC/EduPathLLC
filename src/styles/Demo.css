@@ -1,0 +1,12 @@
+.demoTitle {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.boxOne {
+    width: 75vw;
+    height: 50vh;
+    border-radius: 0.5em;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+}
