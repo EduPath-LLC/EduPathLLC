@@ -4,6 +4,9 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 
 function PricingBox() {
+
+    const navigate = useNavigate();
+
     return(
         <>
         <div className='boxContainer'>
