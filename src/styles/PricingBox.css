@@ -3,7 +3,7 @@
 }
 
 .pricingBox {
-    height: 60vh;
+    height: 70vh;
     width: 20vw;
     border-radius: 0.5em;
     margin: 10px;
@@ -30,14 +30,21 @@
 }
 
 .card-content {
-    padding: 25px;
-    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-align: left;
 }
 
 .card-content h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: -25px;
+}
+
+.card-content h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: -10px;
 }
 
 .buttonsPrices {
@@ -45,15 +52,15 @@
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    margin-top: 3vw;
+    margin-top: 1.5vw;
 }
   
 .frontButtonPrices {
-  width: 8em;
-  border-radius: 2vw;
+  width: 25em;
+  border-radius: 0.2vw;
   border-width: 0px;
   background-color: rgba(196, 196, 196, 0.2);
-  box-shadow: 0px 0px 25px 10px #003061;
+  box-shadow: 0px 0px 25px 5px #003061;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -65,7 +72,7 @@
 
 .frontButtonPrices:hover {
   box-shadow: 0px 0px 25px 10px #004C99;
-  background-color: rgba(196, 196, 196, 0.1);
+  background-color: #003061;
   scale: 1.05;
 }
 
@@ -84,4 +91,19 @@
   margin-top: 5vh;
   font-size: 1.25em;
   color: #fff;
+}
+
+.logoPrice {
+  height: 3vh;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+
+}
+
+.perkContainer {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  margin-bottom: -20px;
 }
