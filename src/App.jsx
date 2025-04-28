@@ -7,6 +7,7 @@ import ContactUs from './screens/ContactUs';
 
 function App() {
   return (
+    <BrowserRouter basename="/EduPathLLC/">
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </Router>
+    </BrowserRouter>
   );
 }
 
