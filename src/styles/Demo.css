@@ -101,6 +101,13 @@ html, body {
     font-size: 0.9rem;
     color: #a6cdfc;
     font-style: italic;
+    overflow: hidden;
+  }
+  .demoImagePlaceholder img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    object-fit: contain;
   }
   
   /* Schedule viewer table */
