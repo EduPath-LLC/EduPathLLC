@@ -1,12 +1,133 @@
-.demoTitle {
-    text-align: center;
-    font-size: 3.5em;
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
 }
 
-.boxOne {
-    width: 75vw;
-    height: 50vh;
-    border-radius: 0.5em;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.1);
+.total {
+  background: radial-gradient(#0d2d4e, #030F1B);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 40px;
+
 }
+
+.demoPage {
+    color: #e0e7f1;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .demoHeader {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .demoHeader h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .demoHeader p {
+    font-size: 1.1rem;
+    color: #b0b9cc;
+  }
+  
+  /* Grid Layout for Content */
+  .demoContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 90vw;
+    max-width: 900px;
+    margin-bottom: 4rem;
+  }
+  
+  /* Stack on small screens */
+  @media (max-width: 700px) {
+    .demoContent {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Card styling */
+  .demoCard {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    min-height: 400px;
+  }
+  
+  .demoCard:hover {
+    transform: scale(1.02);
+  }
+  
+  .demoCard h2 {
+    font-size: 1.5rem;
+    color: #d1e8ff;
+  }
+  
+  .demoCard p {
+    font-size: 1rem;
+    color: #cfd7e3;
+  }
+  
+  /* Placeholder box for images */
+  .demoImagePlaceholder {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed #66c0f4;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #a6cdfc;
+    font-style: italic;
+  }
+  
+  /* Schedule viewer table */
+  .scheduleDemo {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  
+  .scheduleDemo table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e0e7f1;
+    font-size: 0.95rem;
+  }
+  
+  .scheduleDemo th,
+  .scheduleDemo td {
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(224, 231, 241, 0.2);
+    text-align: left;
+  }
+  
+  .scheduleDemo th {
+    background-color: rgba(102, 192, 244, 0.25);
+    color: #a6cdfc;
+    font-weight: 600;
+    border-bottom: 2px solid #66c0f4;
+  }
+  

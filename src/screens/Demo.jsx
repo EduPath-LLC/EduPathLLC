@@ -1,19 +1,52 @@
 import React from 'react';
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 import '../styles/Demo.css';
 
 function Demo() {
   return (
-    <>
-      <div className='total'>
-        <Navbar />
-        <h1 className='demoTitle'> Demo </h1>
+    <div className="total">
+      <Navbar />
 
-        <div className='boxOne'>
+      <div className='demoPage'>
+      <header className="demoHeader">
+        <h1>EduPath Demo</h1>
+        <p>Navigate campus securely. Stay on top of your schedule.</p>
+      </header>
 
-        </div>
+      <main className="demoContent">
+
+        {/* Email Verification */}
+        <section className="demoCard">
+          <div className="demoImagePlaceholder">[ App Screenshot Placeholder ]</div>
+          <h2>Email Verification</h2>
+          <p>Only verified school emails are allowed. This ensures secure, student-only access to all features.</p>
+        </section>
+
+        {/* Location Lock */}
+        <section className="demoCard">
+          <div className="demoImagePlaceholder">[ Map Lock Screenshot Placeholder ]</div>
+          <h2>Location Lock</h2>
+          <p>Map features only unlock when you're physically on campus. No spoofing, no remote access.</p>
+        </section>
+
+        {/* School Email Only */}
+        <section className="demoCard">
+          <div className="demoImagePlaceholder">[ School Email Login Placeholder ]</div>
+          <h2>School Email Only</h2>
+          <p>Access is restricted to school domains like <code>@yourschool.edu</code>. Outsiders are locked out by default.</p>
+        </section>
+
+        {/* Schedule Viewer */}
+        <section className="demoCard">
+          <div className="demoImagePlaceholder">[ Schedule UI Placeholder ]</div>
+          <h2>Schedule Viewer</h2>
+          <p>Quickly view your daily schedule and find your next class — all in one place.</p>
+
+        </section>
+
+      </main>
       </div>
-    </>
+    </div>
   );
 }
 

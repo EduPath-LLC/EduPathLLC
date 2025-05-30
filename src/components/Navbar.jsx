@@ -9,12 +9,12 @@ function Navbar() {
     return(
         <>
             <div className='nav'>
-                <img src={logo} alt="Logo" className='logo' onClick={() => {navigate('/')}} />
+                <img src={logo} alt="Logo" className='logo' role="button" tabIndex="0" style={{ cursor: 'pointer' }} onClick={() => {navigate('/')}} />
 
                 <div className='nav-items'>
-                    <p className='nav-text' onClick={() => {navigate('/demo')}}> Demo </p>
-                    <p className='nav-text' onClick={() => {navigate('/pricing')}}> Pricing </p>
-                    <p className='nav-text' onClick={() => {navigate('/contactus')}}> Contact us </p>
+                    <p className='nav-text button' role="button" tabIndex="0" style={{ cursor: 'pointer' }} onClick={() => {navigate('/demo')}}> Demo </p>
+                    <p className='nav-text button' role="button" tabIndex="0" style={{ cursor: 'pointer' }} onClick={() => {navigate('/pricing')}}> Pricing </p>
+                    <p className='nav-text button' role="button" tabIndex="0" style={{ cursor: 'pointer' }} onClick={() => {navigate('/contactus')}}> Contact us </p>
                 </div>
             </div>
         </>

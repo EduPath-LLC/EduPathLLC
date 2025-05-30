@@ -46,16 +46,15 @@ body {
 }
 
 .total {
-  background: linear-gradient(135deg, rgba(0,41,107,1) 0%, rgba(0,66,172,1) 100%);
-  background-size: 200% 200%;
-  animation: moveBackground 10s linear infinite;
+  background: radial-gradient(#0d2d4e, #030F1B);
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  overflow-y: scroll;
+  padding: 40px;
+
 }
 
 .title {
