@@ -7,7 +7,7 @@ import ContactUs from './screens/ContactUs';
 
 function App() {
   return (
-    <BrowserRouter basename="/EduPathLLC/">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demo" element={<Demo />} />
