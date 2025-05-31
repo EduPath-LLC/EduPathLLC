@@ -3,121 +3,147 @@ body {
     color: #ffffff;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.total {
+  }
+  
+  .total {
     background: radial-gradient(#0d2d4e, #030F1B);
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    overflow-y: scroll;
-    padding: 40px;
+    overflow-y: auto;
+    padding: 5vw;
   }
-
-.priceTitle {
+  
+  .priceTitle {
     text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
+    font-size: 6vw;
+    margin-bottom: 4vh;
     color: #ffffff;
-}
-
-.priceBoxesContainer {
+  }
+  
+  .priceBoxesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-}
-
-.priceBox {
+    gap: 5vw;
+  }
+  
+  .priceBox {
     background-color: #3b373751;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    padding: 30px;
-    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 5vw;
+    width: 80vw;
+    max-width: 300px;
     position: relative;
     color: #ffffff;
-}
-
-.priceBox:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .priceBox:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.priceBox h2 {
-    font-size: 1.5em;
+  }
+  
+  .priceBox h2 {
+    font-size: 1.4em;
     margin-bottom: 10px;
-}
-
-.price {
+  }
+  
+  .price {
     font-size: 1.8em;
     margin-bottom: 10px;
-}
-
-.dollar {
-font-size: 0.6em;
-vertical-align: top;
-}
-
-.per {
-font-size: 0.5em;
-display: block;
-color: #aaa;
-}
-
-.desc, .validity {
-font-size: 0.9em;
-color: #bbb;
-}
-
-.subscribe {
-margin: 15px 0;
-padding: 10px 20px;
-background-color: #1f4d45;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-weight: bold;
-transition: background-color 0.2s ease;
-}
-
-.subscribe:hover {
-background-color: #163d35;
-}
-
-.subscribe.highlight {
-background-color: #6b46c1;
-}
-
-.subscribe.highlight:hover {
-background-color: #553c9a;
-}
-
-.features {
-list-style: none;
-padding: 0;
-margin-top: 10px;
-}
-
-.features li {
-margin-bottom: 8px;
-}
-
-.highlighted {
-border: 2px solid #6b46c1;
-}
-
-.tag {
-position: absolute;
-top: -10px;
-left: 50%;
-transform: translateX(-50%);
-background-color: #6b46c1;
-color: white;
-padding: 5px 10px;
-border-radius: 12px;
-font-size: 0.75em;
-}
+  }
+  
+  .dollar {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
+  
+  .per {
+    font-size: 0.5em;
+    display: block;
+    color: #aaa;
+  }
+  
+  .desc, .validity {
+    font-size: 0.9em;
+    color: #bbb;
+  }
+  
+  .subscribe {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #1f4d45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .subscribe:hover {
+    background-color: #163d35;
+  }
+  
+  .subscribe.highlight {
+    background-color: #6b46c1;
+  }
+  
+  .subscribe.highlight:hover {
+    background-color: #553c9a;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .features li {
+    margin-bottom: 8px;
+  }
+  
+  .highlighted {
+    border: 2px solid #6b46c1;
+  }
+  
+  .tag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6b46c1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.75em;
+  }
+  
+  /* Extra mobile tweaks */
+  @media (max-width: 500px) {
+    .priceTitle {
+      font-size: 8vw;
+    }
+  
+    .priceBox {
+      width: 90vw;
+      padding: 6vw;
+    }
+  
+    .priceBox h2, .price {
+      font-size: 1.2em;
+    }
+  
+    .subscribe {
+      font-size: 0.9em;
+    }
+  
+    .features li {
+      font-size: 0.85em;
+    }
+  }
+  
