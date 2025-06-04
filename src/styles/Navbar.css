@@ -3,12 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 2vw 4vw;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow: hidden;   /* hide overflow */
 }
 
 .logo {
   height: 8vh;
-  transition: 0.2s ease;
+  flex-shrink: 0;     /* prevent logo from shrinking */
+  margin-right: auto;
 }
 
 .logo:hover {
@@ -18,13 +20,14 @@
 
 .nav-items {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 3vw;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow-x: auto;  /* scroll if too many items */
 }
 
 .nav-text {
-  margin-right: 2vw;
+  margin-right: 1vw;
   font-size: 1.25em;
   transition: all 0.2s ease;
   white-space: nowrap;
@@ -35,21 +38,12 @@
   transform: scale(1.1);
 }
 
-/* Mobile tweaks */
 @media (max-width: 600px) {
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 2vw 2vw; /* less side padding */
   }
 
-  .nav-items {
-    justify-content: center;
-    width: 100%;
-    margin-top: 1vh;
-  }
-
-  .nav-text {
-    font-size: 1.25rem;
-    margin-right: 4vw;
+  .logo {
+    margin-right: auto; /* keeps it pinned left */
   }
 }
