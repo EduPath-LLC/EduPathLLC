@@ -137,4 +137,109 @@ html, body {
     font-weight: 600;
     border-bottom: 2px solid #66c0f4;
   }
+  /* Add to existing Demo.css */
+
+/* Video Section */
+.videoSection {
+  width: 90%;
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.videoContainer {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+  aspect-ratio: 9/16; /* Changed to 9:16 for vertical video */
+  max-height: 600px; /* Added to limit height */
+}
+
+.videoPlaceholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  background-color: #0a1a2f; /* Fallback background */
+}
+
+.playOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(102, 192, 244, 0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.playOverlay:hover {
+  background: rgba(102, 192, 244, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.videoCaption h2 {
+  font-size: 1.8rem;
+  color: #d1e8ff;
+  margin-bottom: 0.5rem;
+}
+
+.videoCaption p {
+  font-size: 1.1rem;
+  color: #b0b9cc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Adjust grid for video addition */
+.demoContent {
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .videoSection {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .playOverlay {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
   
+  .videoCaption h2 {
+    font-size: 1.5rem;
+  }
+  
+  .videoCaption p {
+    font-size: 1rem;
+  }
+
+  .videoContainer {
+    max-height: 500px; /* Adjust height for mobile */
+  }
+}
+
+/* Added for better mobile experience */
+@media (max-width: 480px) {
+  .videoContainer {
+    max-height: 400px;
+  }
+}
