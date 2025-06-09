@@ -48,6 +48,7 @@ function Pricing() {
               <li>→ Online Website for Students</li>
               <li>→ School Wide Communication</li>
               <li>→ One Custom Feature</li>
+              <li>→ Creation of Digital ID Cards for all students</li>
             </ul>
           </div>
 
@@ -65,6 +66,7 @@ function Pricing() {
               <li>→ Everything in Tier II</li>
               <li>→ Hallway/Restroom Passes</li>
               <li>→ 3 Custom Features</li>
+              <li>→ Creation of Digital ID Cards for all students</li>
             </ul>
           </div>
         </div>
