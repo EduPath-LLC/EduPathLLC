@@ -5,7 +5,7 @@ import LocationLock from '../assets/LocationLock.jpg';
 import ScheduleViewer from '../assets/ScheduleViewer.jpg';
 import SchoolEmail from '../assets/SchoolEmail.jpg';
 import Lock from '../assets/lock.png';
-import VideoPlaceholder from '../assets/Video.mp4';
+import VideoPlaceholder from '../assets/ScreenRecording_06-09-2025 09-13-59_1.MP4';
 
 function Demo() {
   const videoRef = useRef(null);

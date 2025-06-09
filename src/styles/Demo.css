@@ -155,7 +155,7 @@ html, body {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 1.5rem;
-  aspect-ratio: 9/16; /* Changed to 9:16 for vertical video */
+  aspect-ratio: 37/80; /* Changed to 9:16 for vertical video */
   max-height: 600px; /* Added to limit height */
 }
 
